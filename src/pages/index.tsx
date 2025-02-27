@@ -65,6 +65,38 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
+                <section className={styles.sc3}>
+                    <div className={styles.sc3Content}>
+                        <div className={styles.sc3Item}>
+                            <div className={styles.number}>9</div>
+                            <div className={styles.title}>Năm</div>
+                            <div className={styles.description}>
+                                Có kiến thức chuyên môn sâu rộng, đa lĩnh vực về công nghệ thông tin.
+                            </div>
+                        </div>
+                        <div className={styles.sc3Item}>
+                            <div className={styles.number}>150+</div>
+                            <div className={styles.title}>Khách hàng hài lòng</div>
+                            <div className={styles.description}>
+                                Cách tiếp cận chuyên nghiệp đã đáp ứng được nhu cầu của khách hàng.
+                            </div>
+                        </div>
+                        <div className={styles.sc3Item}>
+                            <div className={styles.number}>30+</div>
+                            <div className={styles.title}>Chuyên gia công nghệ</div>
+                            <div className={styles.description}>
+                                Có chuyên môn kỹ thuật vững vàng và khả năng linh hoạt cao.
+                            </div>
+                        </div>
+                        <div className={styles.sc3Item}>
+                            <div className={styles.number}>120+</div>
+                            <div className={styles.title}>Dự án</div>
+                            <div className={styles.description}>
+                                Những dịch vụ hoàn thiện đã được bàn giao thành công cho khách hàng.
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
 
             <Footer />

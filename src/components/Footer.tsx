@@ -53,26 +53,32 @@ const Footer = () => {
         </div>
         <div className={styles.right}>
           <div className={styles.rightContent}>
-            <h2>Chúng tôi ở đây</h2>
-            <p>Cánh cửa của chúng tôi luôn mở cho một tách cà phê ngon</p>
-            <div className={styles.contactForm}>
-              <input
-                type="text"
-                placeholder="Số điện thoại"
-                className={styles.input}
-              />
-              <input
-                type="email"
-                placeholder="exp@gmail.com"
-                className={styles.input}
-              />
-              <button className={styles.button}>→</button>
+            <div className={styles.textAndFormContainer}>
+              <div className={styles.textSection}>
+                <h2>Chúng tôi ở đây</h2>
+                <p>Cánh cửa của chúng tôi luôn mở cho một tách cà phê ngon</p>
+              </div>
+              <div className={styles.contactForm}>
+                <input
+                  type="text"
+                  placeholder="Số điện thoại"
+                  className={styles.input}
+                />
+                <input
+                  type="email"
+                  placeholder="exp@gmail.com"
+                  className={styles.input}
+                />
+                <button className={styles.button}>→</button>
+              </div>
             </div>
-            <img
-              src="/coffee.png"
-              alt="Coffee Cup"
-              className={styles.coffeeImage}
-            />
+            <div className={styles.imageSection}>
+              <img
+                src="/cfcup.jpg"
+                alt="Coffee Cup"
+                className={styles.coffeeImage}
+              />
+            </div>
           </div>
         </div>
       </div>
