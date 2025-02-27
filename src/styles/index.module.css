@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sc1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #1a438b 0%, #ffffff 50%, #1a438b 100%);
+    padding-top: 150px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.textContainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.design,
+.programming {
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgWrapper {
+    position: relative;
+    margin: 0 20px;
+}
+
+.roundedImage {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.prevButton,
+.nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.prevButton {
+    left: 10px;
+}
+
+.nextButton {
+    right: 10px;
+}
+
+.sc2 {
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.scrollingTextContainer {
+    white-space: nowrap;
+    animation: scrollText 40s linear infinite;
+  }
+  
+  .scrollingText {
+    font-size: 3rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  @keyframes scrollText {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

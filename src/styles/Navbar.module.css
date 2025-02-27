@@ -1,0 +1,96 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+    z-index: 100;
+}
+
+.navbar.scrolled {
+    background-color: #181e28;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    padding: 0px 200px;
+    font-size: 30px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    padding: 0px 200px;
+}
+
+.link {
+    margin: 0 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.link:hover {
+    color: #0070f3;
+}
+
+.transparentButton {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-left: 15px;
+    font-size: 16px;
+
+}
+
+.whiteButton {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-left: 15px;
+    font-size: 16px;
+
+}
+
+.languageDropdown {
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 16px;
+
+}
+
+.dropdownContent {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 15px;
+
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    font-size: 16px;
+
+}
+
+.dropdownContent span {
+    padding: 8px 0;
+    cursor: pointer;
+    color: black;
+}
