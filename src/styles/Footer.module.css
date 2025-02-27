@@ -1,0 +1,135 @@
+.footer {
+    background-color: #181e28;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.wowup {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.infoRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.infoRow a {
+    color: white;
+}
+
+.infoRow span {
+    margin-right: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.socialIcons p {
+    margin-right: 10px;
+}
+
+.links {
+    display: flex;
+    margin-top: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+.link .a{
+    color: white;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.right {
+    background-color: #283040;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    /* Chiếm khoảng 40% chiều rộng */
+}
+
+.rightContent {
+    text-align: center;
+}
+
+.rightContent h2 {
+    margin-bottom: 10px;
+}
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #384050;
+    color: white;
+}
+
+.button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0070f3;
+    color: white;
+    cursor: pointer;
+}
+
+.coffeeImage {
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.socialIcons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.socialIcon {
+    
+    margin-right: 10px;
+    color: white;
+    
+}
+
+.socialIcon svg {
+    width: 20px;
+    height: 20px;
+}
