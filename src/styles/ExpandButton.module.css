@@ -1,0 +1,27 @@
+.expandContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .expandButton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #007bff;
+    transition: 0.3s;
+    margin-left: 10px;
+  }
+  
+  .expandButton:hover {
+    color: #0056b3;
+  }
+  
+  .content {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    border-left: 2px solid #007bff;
+  }
+  

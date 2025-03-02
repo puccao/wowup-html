@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import styles from '../styles/index.module.css';
+import ServiceList from "../components/ServiceList";
 import { useState } from 'react';
 
 export default function Home() {
@@ -94,6 +95,18 @@ export default function Home() {
                             <div className={styles.description}>
                                 Những dịch vụ hoàn thiện đã được bàn giao thành công cho khách hàng.
                             </div>
+                        </div>
+                    </div>
+                    <div className={styles.sc3Content2}>
+                        <div>
+                            <div className={styles.number}>chúng tôi có kinh nghiệm</div>
+                            <div>
+                                <img src="" alt="" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <ServiceList />
                         </div>
                     </div>
                 </section>
