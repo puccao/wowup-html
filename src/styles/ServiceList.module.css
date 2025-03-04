@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.serviceItem {
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background: #1a1a2e;
+  transition: 0.3s;
+  padding: 15px;
+}
+
+.serviceItem:hover {
+  background: #16213e;
+  transform: scale(1.02);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  flex: 1;
+}
+
+.expandButton {
+  background: #007bff;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.expandButton:hover {
+  background: #0056b3;
+}
+
+.content {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.show {
+  max-height: 200px;
+  opacity: 1;
+  padding-top: 10px;
+}
