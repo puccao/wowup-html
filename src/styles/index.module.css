@@ -129,15 +129,15 @@ body {
 
 .sc3Item {
     display: grid;
-    grid-template-columns: auto 1fr; /* Cột 1 tự động, cột 2 chiếm phần còn lại */
-    grid-template-rows: auto auto; /* Hai hàng */
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
     gap: 10px;
     align-items: center;
     text-align: left;
 }
 
 .number {
-    grid-row: 1 / 3; /* Trải dài từ hàng 1 đến hàng 2 */
+    grid-row: 1 / 3;
     font-size: 6rem;
     font-weight: bold;
     color: #8892b0;
@@ -161,6 +161,57 @@ body {
     line-height: 1.5;
     font-size: 1rem;
     max-width: 100%;
+}
+
+.sc3Layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.leftSection {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.experienceText {
+    font-size: 64px;
+    font-weight: bold;
+    color: rgb(193 199 208);
+    position: absolute;
+    top: -90px; 
+    left: 45%; 
+    transform: translateX(-50%); 
+    background: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    max-width: 90%;
+    text-align: center;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+
+
+.experienceImage {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.rightSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Responsive */

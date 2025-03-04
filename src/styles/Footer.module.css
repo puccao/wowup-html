@@ -1,153 +1,153 @@
 .footer {
-    background-color: #181e28;
-    color: white;
-    padding: 30px; /* Tăng padding */
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .content {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .left {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding: 20px; /* Thêm padding cho left */
-  }
-  
-  .wowup {
-    font-size: 28px; /* Tăng font-size */
-    font-weight: bold;
-    margin-bottom: 25px; /* Tăng margin-bottom */
-  }
-  
-  .infoRow {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Tăng margin-bottom */
-  }
-  
-  .infoRow a {
-    color: white;
-    font-size: 16px; /* Tăng font-size */
-  }
-  
-  .infoRow span {
-    margin-right: 15px; /* Tăng margin-right */
-    font-size: 16px; /* Tăng font-size */
-  }
-  
-  .socialIcons {
-    display: flex;
-    margin-top: 25px; /* Tăng margin-top */
-  }
-  
-  .socialIcons a {
-    margin-right: 15px; /* Tăng margin-right */
-    color: white;
-  }
-  
-  .socialIcons svg {
-    width: 25px; /* Tăng kích thước icon */
-    height: 25px; /* Tăng kích thước icon */
-  }
-  
-  .links {
-    display: flex;
-    margin-top: 25px; /* Tăng margin-top */
-  }
-  
-  .link {
-    text-decoration: none;
-    color: white;
-    margin-right: 15px; /* Tăng margin-right */
-    font-size: 16px; /* Tăng font-size */
-  }
-  
-  .link:hover {
-    text-decoration: underline;
-  }
-  
-  .right {
-    background-color: #283040;
-    padding: 30px; /* Tăng padding */
-    display: flex;
-    justify-content: center;
-    width: 55%;
-    border-radius: 30px;
-  }
-  
-  .rightContent {
-    display: flex;
-    padding: 15px; /* Thêm padding */
-  }
-  
-  .textSection {
-    text-align: left;
-    width: 40%;
-    margin-right: 100px; /* Tăng margin-right */
-  }
-  
-  .textSection h2 {
-    margin-bottom: 30px; /* Tăng margin-bottom */
-    font-size: 24px; /* Tăng font-size */
-  }
-  
-  .textSection p {
-    font-size: 16px; /* Tăng font-size */
-  }
-  
-  .contactForm {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    margin-right: 20px; /* Tăng margin-right */
-  }
-  
-  .input {
-    padding: 12px; /* Tăng padding */
-    margin-bottom: 20px; /* Tăng margin-bottom */
-    border: none;
-    border-radius: 8px; /* Tăng border-radius */
-    background-color: #384050;
-    color: white;
-    font-size: 16px; /* Tăng font-size */
-  }
-  
-  .button {
-    padding: 12px 20px; /* Tăng padding */
-    border: none;
-    border-radius: 8px; /* Tăng border-radius */
-    background-color: #0070f3;
-    color: white;
-    cursor: pointer;
-    align-self: flex-start;
-    font-size: 16px; /* Tăng font-size */
-  }
-  
-  .imageSection {
-    width: 30%;
-    text-align: right;
-  }
-  
-  .coffeeImage {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .bottom {
-    text-align: center;
-    margin-top: 30px; /* Tăng margin-top */
-    font-size: 16px; /* Tăng font-size */
-  }
-  
-  .textAndFormContainer {
-    display: flex;
-    flex-direction: column;
-  }
+  background-color: #181e28;
+  color: white;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 20px;
+}
+
+.wowup {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.infoRow a {
+  color: white;
+  font-size: 16px;
+}
+
+.infoRow span {
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.socialIcons {
+  display: flex;
+  margin-top: 25px;
+}
+
+.socialIcons a {
+  margin-right: 15px;
+  color: white;
+}
+
+.socialIcons svg {
+  width: 25px;
+  height: 25px;
+}
+
+.links {
+  display: flex;
+  margin-top: 25px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.right {
+  background-color: #283040;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  border-radius: 30px;
+}
+
+.rightContent {
+  display: flex;
+  padding: 15px;
+}
+
+.textSection {
+  text-align: left;
+  width: 40%;
+  margin-right: 100px;
+}
+
+.textSection h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.textSection p {
+  font-size: 16px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin-right: 20px;
+}
+
+.input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #384050;
+  color: white;
+  font-size: 16px;
+}
+
+.button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0070f3;
+  color: white;
+  cursor: pointer;
+  align-self: flex-start;
+  font-size: 16px;
+}
+
+.imageSection {
+  width: 30%;
+  text-align: right;
+}
+
+.coffeeImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.textAndFormContainer {
+  display: flex;
+  flex-direction: column;
+}

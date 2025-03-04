@@ -32,13 +32,10 @@ const services = [
 export default function ServiceList() {
   return (
     <div className={styles.container}>
-      {services.map((service, index) => (
-        <div key={index} className={styles.serviceItem}>
-          <div className={styles.header}>
-            <div>{service.title}</div>
-            <ExpandButton>{service.content}</ExpandButton>
-          </div>
-        </div>
+      {services.map((service) => (
+        <ExpandButton key={service.title} title={service.title}>
+          {service.content}
+        </ExpandButton>
       ))}
     </div>
   );
