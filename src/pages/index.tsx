@@ -46,8 +46,10 @@ const ImageCarousel = ({ images }) => {
 const StatItem = ({ number, title, description }) => (
     <div className={styles.sc3Item}>
         <div className={styles.number}>{number}</div>
-        <div className={styles.title}>{title}</div>
-        <div className={styles.description}>{description}</div>
+        <div className={styles.sc3}>
+            <div className={styles.title}>{title}</div>
+            <div className={styles.description}>{description}</div>
+        </div>
     </div>
 );
 
@@ -90,7 +92,7 @@ export default function Home() {
                 </section>
 
                 {/* Section 3 */}
-                <section className={styles.sc3}>
+                <section id="about" className={styles.sc3}>
                     <div className={styles.sc3Content}>
                         {stats.map((stat, index) => (
                             <StatItem key={index} {...stat} />
@@ -109,6 +111,10 @@ export default function Home() {
                     </div>
                 </section>
 
+                {/* Section 3 */}
+                <section>
+
+                </section>
             </main>
 
             <Footer />

@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.left}>
-        <span>WOWUP</span>
+        <Link href="/" className={styles.logo}><img src="/logo.jpg" alt="" /></Link>
         <Link href="/" className={styles.link}>Dịch vụ</Link>
         <Link href="/about" className={styles.link}>Dự án</Link>
         <Link href="/contact" className={styles.link}>Bài viết</Link>

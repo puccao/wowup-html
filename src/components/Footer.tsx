@@ -64,7 +64,9 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.content}>
         <div className={styles.left}>
-          <span className={styles.wowup}>WOWUP</span>
+          <a href="/" className={styles.wowup}>
+            <img src="/lg2.jpg" alt="Logo" />
+          </a>
           <ContactInfo />
           <SocialIcons />
           <NavigationLinks />
@@ -79,12 +81,14 @@ const Footer = () => {
               <ContactForm />
             </div>
             <div className={styles.imageSection}>
-              <img src="/cfcup.jpg" alt="Coffee Cup" className={styles.coffeeImage} />
+              <img src="/cf2.jpg" alt="Coffee Cup" className={styles.coffeeImage} />
             </div>
           </div>
         </div>
       </div>
+      
       <div className={styles.bottom}>
+        <hr />
         <span>© 2024 Được thiết kế và phát triển bởi Wow Up</span>
       </div>
     </footer>

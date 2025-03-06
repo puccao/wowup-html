@@ -4,56 +4,76 @@ body {
     box-sizing: border-box;
 }
 
+/* Container chính */
 .container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+/* Phần Hero */
 .sc1 {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #1a438b 0%, #ffffff 50%, #1a438b 100%);
-    padding-top: 150px;
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px;
+    background-image: url("/bghero.jpg");
+    filter: brightness(1.2);
+    height: 700px;
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    text-align: center;
 }
 
+
 .textContainer {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 150px;
+    transform: translateY(-50%);
 }
 
 .design,
 .programming {
-    font-size: 5rem;
-    color: rgba(0, 0, 0, 0.5);
+    font-size: 140px;
+    color: rgba(255, 255, 255, 0.3);
+    mix-blend-mode: overlay;
     margin: 0;
     text-transform: uppercase;
     font-weight: bold;
 }
 
+/* Hình ảnh */
 .imgContainer {
+    margin-top: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .imgWrapper {
     position: relative;
-    margin: 0 20px;
+    margin: 10px;
 }
 
 .roundedImage {
-    width: 500px;
-    height: 300px;
+    width: 550px;
+    height: 370px;
     border-radius: 20px;
     object-fit: cover;
 }
 
+/* Nút chuyển ảnh */
 .prevButton,
 .nextButton {
     position: absolute;
@@ -62,7 +82,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -75,6 +95,7 @@ body {
     right: 10px;
 }
 
+/* Phần scrolling text */
 .sc2 {
     background-color: white;
     width: 100%;
@@ -84,87 +105,73 @@ body {
 
 .scrollingTextContainer {
     white-space: nowrap;
-    animation: scrollText 40s linear infinite;
+    animation: scrollText 30s linear infinite;
 }
 
 .scrollingText {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: black;
     text-transform: uppercase;
     font-weight: bold;
     display: inline-block;
 }
 
-@keyframes scrollText {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 
+/* Phần SC3 */
 .sc3 {
-    background-color: rgb(3 15 28);
-    padding: 80px 0;
+    background-color: rgb(3, 15, 28);
+    padding: 60px 20px;
     color: white;
     text-align: center;
-    border-top-left-radius: 80px;
-    border-top-right-radius: 80px;
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px;
+    border-radius: 60px;
 }
 
+/* Bố cục lưới */
 .sc3Content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 40px;
-    padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Các item trong SC3 */
 .sc3Item {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto;
-    gap: 10px;
+    display: flex;
     align-items: center;
-    text-align: left;
+    gap: 30px;
+}
+.sc3content{
+    display: flex;
+    flex-direction: column;
 }
 
 .number {
-    grid-row: 1 / 3;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: bold;
     color: #8892b0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 80px;
+    min-width: 70px;
 }
 
 .title {
-    grid-column: 2;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    margin-bottom: 0.25rem;
     color: white;
+    text-align: left;
 }
 
 .description {
-    grid-column: 2;
-    color: #8892b0;
+    color: white;
     line-height: 1.5;
     font-size: 1rem;
-    max-width: 100%;
+    text-align: left;
 }
 
+/* Phần layout trải nghiệm */
 .sc3Layout {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
@@ -174,35 +181,24 @@ body {
 
 .leftSection {
     flex: 1;
+    text-align: center;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .experienceText {
-    font-size: 64px;
+    font-size: 40px;
     font-weight: bold;
     color: rgb(193 199 208);
-    position: absolute;
-    top: -90px; 
-    left: 45%; 
-    transform: translateX(-50%); 
+    position: relative;
     background: none;
     padding: 5px 15px;
     border-radius: 5px;
-    max-width: 90%;
-    text-align: center;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis; 
+    max-width: 100%;
 }
-
-
 
 .experienceImage {
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     height: auto;
     border-radius: 20px;
 }
@@ -215,8 +211,98 @@ body {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+
+    .design,
+    .programming {
+        font-size: 3.5rem;
+    }
+
+    .roundedImage {
+        width: 400px;
+        height: 250px;
+    }
+
+    .scrollingText {
+        font-size: 2rem;
+    }
+
+    .sc3Layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experienceText {
+        font-size: 36px;
+    }
+}
+
 @media (max-width: 768px) {
-    .statistics-container {
-        grid-template-columns: 1fr;
+
+    .design,
+    .programming {
+        font-size: 2.8rem;
+    }
+
+    .roundedImage {
+        width: 320px;
+        height: 200px;
+    }
+
+    .prevButton,
+    .nextButton {
+        padding: 6px 10px;
+    }
+
+    .scrollingText {
+        font-size: 1.8rem;
+    }
+
+    .sc3Item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .number {
+        font-size: 4rem;
+    }
+
+    .experienceText {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .design,
+    .programming {
+        font-size: 2.5rem;
+    }
+
+    .roundedImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .prevButton,
+    .nextButton {
+        padding: 5px 8px;
+    }
+
+    .scrollingText {
+        font-size: 1.5rem;
+    }
+
+    .sc3Item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .number {
+        font-size: 3.5rem;
+    }
+
+    .experienceText {
+        font-size: 28px;
     }
 }

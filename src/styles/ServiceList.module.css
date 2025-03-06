@@ -4,62 +4,81 @@
   margin: 20px auto;
 }
 
+/* Từng mục dịch vụ */
 .serviceItem {
-  border: 1px solid #007bff;
-  border-radius: 10px;
+  background: #1f2937;
+  border-radius: 16px;
   margin-bottom: 15px;
-  background: #1a1a2e;
   transition: 0.3s;
-  padding: 15px;
+  overflow: hidden;
 }
 
 .serviceItem:hover {
-  background: #16213e;
-  transform: scale(1.02);
+  background: #1f2937;
 }
 
-.header {
+/* Header chứa icon + tiêu đề + dấu + */
+.serviceHeader {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 20px;
   cursor: pointer;
 }
 
-.title {
+.serviceLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icon bên trái */
+.serviceIcon {
+  font-size: 24px;
+  color: #3b82f6;
+}
+
+/* Tiêu đề dịch vụ */
+.serviceTitle {
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
-  flex: 1;
 }
 
-.expandButton {
-  background: #007bff;
+/* Nút mở rộng */
+.serviceExpandButton {
+  background: none;
   border: none;
   color: white;
-  font-size: 18px;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  transition: 0.3s;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
-.expandButton:hover {
-  background: #0056b3;
+.serviceExpandButton[aria-expanded="true"] {
+  transform: rotate(45deg);
 }
 
-.content {
+/* Nội dung mở rộng */
+.serviceContent {
+  background: #1f2937;
+  color: rgb(198 198 198);
+  padding: 0 20px;
   max-height: 0;
   opacity: 0;
-  padding: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.show {
-  max-height: 200px;
+.serviceContent.show {
+  max-height: 500px;
   opacity: 1;
-  padding-top: 10px;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
 }
