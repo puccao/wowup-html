@@ -1,0 +1,76 @@
+/* ========== Section 5 ========== */
+.sc5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 cột trên mỗi hàng */
+    gap: 15px;
+    /* Giảm khoảng cách giữa các box */
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    max-width: 900px;
+    /* Giữ bố cục không quá rộng */
+    margin: 0 auto;
+    /* Căn giữa */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 190px;
+    height: 80px;
+    padding: 8px;
+    border-radius: 15px;
+    /* Bo góc giống mẫu */
+    border: 1px solid #b0b0b0;
+    /* Viền nhẹ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    background: white;
+}
+
+.image{
+    mix-blend-mode: luminosity;
+    transition: all 0.3s;
+    max-width: 85%;
+    max-height: 85%;
+}
+
+.box:hover {
+    border-color: black;
+}
+
+.box:hover .image_sc5 {
+    mix-blend-mode: normal;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .sc5 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sc5 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sc5 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        max-width: 300px;
+    }
+}

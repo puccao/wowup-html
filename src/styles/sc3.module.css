@@ -1,0 +1,91 @@
+.sc3 {
+    background-color: rgb(3, 15, 28);
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 60px;
+}
+
+/* Bố cục lưới */
+.sc3Content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Các item trong SC3 */
+.sc3Item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.sc3content {
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #8892b0;
+    min-width: 70px;
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+
+.description {
+    color: white;
+    line-height: 1.5;
+    font-size: 1rem;
+    text-align: left;
+}
+
+/* Phần layout trải nghiệm */
+.sc3Layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.leftSection {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.experienceText {
+    font-size: 64px;
+    font-weight: bold;
+    color: rgb(193 199 208);
+    position: relative;
+    background: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.experienceImage {
+    width: auto;
+    height: auto;
+    border-radius: 40px;
+    margin: 20px;
+}
+
+.rightSection {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

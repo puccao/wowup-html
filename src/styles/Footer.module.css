@@ -183,12 +183,12 @@
 }
 
 .hr {
-  border: none; /* Xóa viền mặc định */
-  height: 2px; /* Độ dày đường kẻ */
-  background-color: white; /* Màu sắc đường kẻ */
-  width: 100vw; /* Chiều rộng toàn màn hình */
-  position: absolute; /* Định vị cố định */
-  top: 50px; /* Điều chỉnh vị trí (ví dụ: 50px từ trên xuống) */
+  border: none;
+  height: 2px;
+  background-color: white;
+  width: 100vw;
+  position: absolute;
+  top: 50px;
   left: 0;
 }
 

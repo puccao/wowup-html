@@ -1,0 +1,68 @@
+/* Section 6 */
+.sc6 {
+    padding: 20px;
+}
+
+/* Container */
+.container_sc6 {
+    max-width: 1440px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .container_sc6 {
+        padding: 5rem;
+    }
+}
+
+/* Header */
+.header_sc6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Title */
+.title_sc6 {
+    color: #4a4a4a;
+    font-size: 1.875rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .title_sc6 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title_sc6 {
+        font-size: 72px;
+        line-height: 64px;
+    }
+}
+
+/* Actions */
+.actions_sc6 {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Buttons */
+.button_sc6 {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button_sc6:hover {
+    background-color: rgba(245, 245, 245, 0.6);
+}
